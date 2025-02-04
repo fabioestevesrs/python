@@ -47,8 +47,8 @@ class Biblioteca:
         print(f"Itens da Biblioteca {self.nome}\n")
         for i, item in enumerate(self._itens, start=1):
             if hasattr(item, '_isbn'):
-                mensagem = f"{i} (Livro) - Título: {item.titulo} | Autor: {item._autor} | Preço: {item._preco} | ISBN: {item._isbn}"
+                mensagem = f"{i} (Livro) - Título: {item._titulo} | Autor: {item._autor} | Preço: {item._preco} | ISBN: {item._isbn}"
             else:
-                mensagem = f"{i} (Revista) - Título: {item.titulo} | Autor: {item._autor} | Preço: {item._preco} | Edição: {item._edicao}"
+                mensagem = f"{i} (Revista) - Título: {item._titulo} | Autor: {item._autor} | Preço: {item._preco} | Edição: {item._edicao}"
 
             print(mensagem)
