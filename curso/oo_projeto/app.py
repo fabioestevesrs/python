@@ -7,8 +7,8 @@ biblioteca_centro.alterna_estado()
 biblioteca_centro.receber_avaliacao('Usuário A', 8.5)
 
 biblioteca_cb = Biblioteca('Biblioteca CB')
-biblioteca_cb.receber_avaliacao('Usuário A', 7)
-biblioteca_cb.receber_avaliacao('Usuário B', 8)
+biblioteca_cb.receber_avaliacao('Usuário B', 7)
+biblioteca_cb.receber_avaliacao('Usuário C', 8)
 
 livro1 = Livro("Livro 1", "Autor 1", 30, "123-4567")
 revista1 = Revista("Revista 1", "Autor 2", 15, "Quinta")
