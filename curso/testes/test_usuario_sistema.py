@@ -32,7 +32,7 @@ def db_connection():
 )
 @pytest.mark.unit
 def test_adicionar_usuario(db_connection, id, nome, email, esperado_nome):
-    conn, cursor = db_connection
+    _, cursor = db_connection
     adicionar_usuario(cursor, id, nome, email)
     resultado = buscar_usuario(cursor, email)
 
@@ -43,7 +43,7 @@ def test_adicionar_usuario(db_connection, id, nome, email, esperado_nome):
 
 @pytest.mark.integration
 def test_buscar_usuario_com_email_inexistente(db_connection):
-    conn, cursor = db_connection
+    _, cursor = db_connection
     resultado = buscar_usuario(cursor, "emailinexistente@email.com")
 
     assert resultado is None
