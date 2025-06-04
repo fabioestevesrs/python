@@ -1,0 +1,21 @@
+[project]
+name = "automatizacao-selenium"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Fábio Esteves",email = "fabio.estevesrs@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "selenium (>=4.33.0,<5.0.0)",
+    "python-dotenv (>=1.1.0,<2.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "automatizacao_selenium", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
